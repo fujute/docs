@@ -30,7 +30,8 @@ az sql db create --resource-group $resourceGroup \
 
 az vm create \
     --resource-group $resourceGroup \
-    --name testVM$randomIdentifier \
+    --location "$location" \
+    --name testVMfuju001 \
     --image microsoft-dsvm:dsvm-windows:server-2019:latest \
     --size Standard_DS2_v2 \
     --public-ip-sku Standard \
